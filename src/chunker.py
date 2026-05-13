@@ -47,7 +47,7 @@ class DocumentChunker:
             raise FileNotFoundError(f"Document not found: {path}")
         
         raw_text = self._read_file(path)
-        chunks = self._split(raw_text)
+        return self._to_records(self._split(raw_text))
 
     def chunk_text(self, text: str, source: str = "inline") -> List[Dict[str, str]]:
         """
@@ -79,7 +79,7 @@ class DocumentChunker:
                 "pypdf is required to read PDF files. "
                 "Install it with: pip install pypdf"
             )
-        reader = pypdf.PdfReader(str(Path))
+        reader = pypdf.PdfReader(str(path))
         pages = [page.extract_text() or "" for page in reader.pages]
         return "\n\n".join(pages)
     
