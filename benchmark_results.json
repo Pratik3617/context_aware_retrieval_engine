@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-14 12:42 UTC",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "vertex_equivalent": "textembedding-gecko@003",
+    "chunk_size": 350,
+    "chunk_overlap": 80,
+    "chunk_strategy": "rescursive_split",
+    "similarity_metric": "cosine",
+    "top_k": 3,
+    "corpus_chunks": 46
+  },
+  "comparisons": [
+    {
+      "query": "How does the system handle peak load?",
+      "strategy_a": {
+        "query": "How does the system handle peak load?",
+        "strategy": "A",
+        "expanded_query": null,
+        "results": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk_0003",
+            "score": 0.613872,
+            "text_preview": "Handling peak load is one of the most critical operational challenges in distributed infrastructure. When traffic spikes..."
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk_0009",
+            "score": 0.537614,
+            "text_preview": "Engineers use load testing tools such as Locust, k6, or Gatling to drive synthetic traffic at multiples of expected peak..."
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk_0006",
+            "score": 0.43393,
+            "text_preview": "Load balancers distribute incoming requests across available replicas using algorithms such as round-robin, least-connec..."
+          }
+        ]
+      },
+      "strategy_b": {
+        "query": "How does the system handle peak load?",
+        "strategy": "B",
+        "expanded_query": "How does the system handle peak load?. Related concepts: traffic spikes autoscaling horizontal scaling load balancing high concurrency throughput optimization resource allocation distributed scaling",
+        "results": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk_0003",
+            "score": 0.786982,
+            "text_preview": "Handling peak load is one of the most critical operational challenges in distributed infrastructure. When traffic spikes..."
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk_0009",
+            "score": 0.583127,
+            "text_preview": "Engineers use load testing tools such as Locust, k6, or Gatling to drive synthetic traffic at multiples of expected peak..."
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk_0004",
+            "score": 0.579859,
+            "text_preview": "Horizontal scaling, where additional service replicas are spun up in response to demand, is the standard mitigation. Kub..."
+          }
+        ]
+      }
+    },
+    {
+      "query": "What are the strategies for optimizing vector search latency?",
+      "strategy_a": {
+        "query": "What are the strategies for optimizing vector search latency?",
+        "strategy": "A",
+        "expanded_query": null,
+        "results": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk_0022",
+            "score": 0.564645,
+            "text_preview": "Vector databases store high-dimensional embeddings and support approximate nearest neighbour queries with sub-millisecon..."
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk_0000",
+            "score": 0.56138,
+            "text_preview": "Distributed Systems and Vector Search: Architecture, Scalability, and Modern Retrieval Techniques"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk_0025",
+            "score": 0.526618,
+            "text_preview": "FAISS, developed by Meta AI, is the most widely used open-source library for dense vector search. It supports both exact..."
+          }
+        ]
+      },
+      "strategy_b": {
+        "query": "What are the strategies for optimizing vector search latency?",
+        "strategy": "B",
+        "expanded_query": "What are the strategies for optimizing vector search latency?. Related concepts: approximate nearest neighbor ANN indexing FAISS optimization embedding retrieval low latency similarity search semantic retrieval throughput vector indexing performance dense retrieval optimization",
+        "results": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk_0022",
+            "score": 0.695155,
+            "text_preview": "Vector databases store high-dimensional embeddings and support approximate nearest neighbour queries with sub-millisecon..."
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk_0000",
+            "score": 0.612507,
+            "text_preview": "Distributed Systems and Vector Search: Architecture, Scalability, and Modern Retrieval Techniques"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk_0023",
+            "score": 0.600099,
+            "text_preview": "Flat indices perform exact nearest neighbour search by comparing the query vector against every stored vector; this guar..."
+          }
+        ]
+      }
+    },
+    {
+      "query": "How is data consistency maintained during distributed ingestion?",
+      "strategy_a": {
+        "query": "How is data consistency maintained during distributed ingestion?",
+        "strategy": "A",
+        "expanded_query": null,
+        "results": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk_0011",
+            "score": 0.670481,
+            "text_preview": "Data consistency during high-throughput ingestion pipelines requires careful coordination. Write-ahead logs ensure durab..."
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk_0002",
+            "score": 0.483185,
+            "text_preview": "Systems like Apache Cassandra and DynamoDB are designed around this tradeoff, using consistent hashing to distribute dat..."
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk_0001",
+            "score": 0.437858,
+            "text_preview": "Modern distributed systems must balance consistency, availability, and partition tolerance \u2014 a tradeoff formalized by th..."
+          }
+        ]
+      },
+      "strategy_b": {
+        "query": "How is data consistency maintained during distributed ingestion?",
+        "strategy": "B",
+        "expanded_query": "How is data consistency maintained during distributed ingestion?. Related concepts: replication consistency synchronized ingestion distributed data synchronization consistent state management distributed write coordination parallel data pipelines replication partitioning distributed coordination stream ingestion fault tolerant ingestion",
+        "results": [
+          {
+            "rank": 1,
+            "chunk_id": "chunk_0011",
+            "score": 0.671672,
+            "text_preview": "Data consistency during high-throughput ingestion pipelines requires careful coordination. Write-ahead logs ensure durab..."
+          },
+          {
+            "rank": 2,
+            "chunk_id": "chunk_0001",
+            "score": 0.519235,
+            "text_preview": "Modern distributed systems must balance consistency, availability, and partition tolerance \u2014 a tradeoff formalized by th..."
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chunk_0013",
+            "score": 0.515336,
+            "text_preview": "Conflict-free replicated data types allow concurrent updates across replicas without coordination, resolving conflicts d..."
+          }
+        ]
+      }
+    }
+  ]
+}
