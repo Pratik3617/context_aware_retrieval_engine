@@ -35,6 +35,9 @@ class DocumentChunker:
             chunk_overlap=chunk_overlap,
             strategy=strategy
         )
+        self.chunk_size = chunk_size
+        self.chunk_overlap = chunk_overlap
+        self.strategy = strategy
         
     def chunk_file(self, file_path: str | Path) -> List[Dict[str, str]]:
         """

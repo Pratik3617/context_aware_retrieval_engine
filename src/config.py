@@ -19,8 +19,8 @@ class ChunkStrategy(str, Enum):
 
 @dataclass(frozen=True)
 class ChunkingConfig:
-    chunk_size: int = 500
-    chunk_overlap: int = 100
+    chunk_size: int = 350
+    chunk_overlap: int = 80
     strategy: ChunkStrategy = ChunkStrategy.RECURSIVE_SPLIT
 
     document_path: str = os.path.join(
@@ -56,7 +56,6 @@ class BenchmarkConfig:
     ])
 
     output_json: str = "benchmark_results.json"
-    output_md: str = "retrieval_benchmark.md"
 
 CHUNK_CFG     = ChunkingConfig()
 EMBEDDING_CFG = EmbeddingConfig()
